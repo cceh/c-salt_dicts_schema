@@ -1,0 +1,1 @@
+Excerpts from individual dictionaries as examples, how the schema was utilised for different structures.

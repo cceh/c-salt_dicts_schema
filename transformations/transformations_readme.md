@@ -1,0 +1,1 @@
+The folder `transformations` contains the transformation files (XSLT or otherwise) useful for working with c-salt dictionary schema.

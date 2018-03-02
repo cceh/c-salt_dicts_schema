@@ -1,0 +1,1 @@
+The folder `data` contains the actual schema files of c-salt dictionary schema.
