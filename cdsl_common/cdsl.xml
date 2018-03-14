@@ -900,6 +900,9 @@
 									<valItem ident="unk">
 										<desc>unknown</desc>
 									</valItem>
+									<valItem ident="he">
+										<desc>GRA:hebrew</desc>
+									</valItem>
 								</valList>
 							</attDef>
 						</attList>
