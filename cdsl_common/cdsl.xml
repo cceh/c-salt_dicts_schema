@@ -34,7 +34,7 @@
 					<titlePart type="main">Data model CDSL &#x2013; </titlePart>
 					<titlePart type="sub">Documentation</titlePart>
 				</docTitle>
-				<docAuthor>CCeH (MG)</docAuthor>
+				<docAuthor>CCeH (MG/FM)</docAuthor>
 				<docDate>2015</docDate>
 				<!-- ggf. erweitern und überarbeiten -->
 			</titlePage>
@@ -72,9 +72,7 @@
 				<head>TEI data model - customization done for the Cologne Sanskrit Lexicon</head>
 				<p>The mark-up specifications used in the TEI CSL are a restricted subset of the
 					standard TEI model and we tried to find solutions within the standard TEI model
-					whenever possible. However, three types of customization were employed in the
-					project. Especially to preserve information contained in the original mark-up
-					and to account for the structural diversity of the dictionaries.</p>
+					whenever possible.</p>
 				<list>
 					<head>Customizations done:</head>
 					<item>we included only the modules we needed and excluded the elements we are
