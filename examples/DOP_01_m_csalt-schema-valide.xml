@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="DoP_latex.xsl"?>
+<?xml-model href="../common/out/csalt_chaining_to_DOP.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Title</title>
+			</titleStmt>
+			<publicationStmt>
+				<p>Publication Information</p>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Information about the source</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div>
+				<head>m</head>
+				<entry type="main" n="1">
+					<form>
+						<orth>ma</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<etym>\ts</etym>
+					<!-- Im csalt-Schema ausgeschlossen, da nich eindeutig identifizierbar. Im Ausgangs-XML-File für Monier-Williams gab es ein Element das "etym" hieß, dieses wurde im Zielformat als ´<w ana="etym"> übernommen. Wenn die Information hier aber nach den TEI-Guidelines eindeutig als "etym" identifiert werden kann, ist das aus meinerSicht eine gute Lösung.-->
+					<sense>
+						<def>the sound <q><w xml:lang="pi">m</w></q>; the consonant <q><w xml:lang="pi">m</w></q></def>
+						<!-- zusätzliche Klammer <def/>, in csalt haben wir das bisher nicht, kann man aber duchaus machen -->
+						<!-- Auszeichenung als "quoted": geht es dir hier nur darum festzuhalten, das es Abfühungszeichen geben sollte? Die Ausweisung der Sprache sollte besser in einem extra Element erfolgen, z.B. <w xml:lang="">-->
+						<cit>
+							<bibl>\Kacctwo II.3,173</bibl>
+							<quote>amussa <oRef/>o saṃ</quote>
+							<!-- Wofür nutzt du <oRef/> hier? Ist bisher nicht im csalt-schema. Wenn du es nutzen willst solltest du es mindenstenz noch über ein @type ausweisen, damit man weiß wofür es stehen soll. -->
+						</cit>
+						<cit>
+							<bibl>\Kacctwo IV.6,629</bibl>
+							<quote><oRef/>\ ca to vā,
+<note><bibl>\Kaccv 203,\lines{8}</bibl>:
+<quote><oRef/>assa ca to hoti vā</quote></note></quote>
+						</cit>
+						<cit type="sim">
+							<bibl>\Sadd 860,\lines{14}</bibl>
+							<quote>adato ca <oRef/>assa to vā</quote>
+						</cit>
+						<cit>
+							<bibl>\Kaccv 2,\lines{15} \textit{\foll}</bibl>
+							<quote>pa pha ba bha <oRef/></quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Sadd 604,\lines{20} \textit{\foll}</bibl>
+						</cit>
+					</sense>
+					<re type="sub">
+						<form>
+							<orth><choice>
+									<expan>manta</expan>
+									<abbr>°’\=/anta</abbr>
+								</choice></orth>
+						</form>
+						<gramGrp>
+							<gen>\mfn</gen>
+						</gramGrp>
+						<sense>
+							<def>ending with the consonant <q><w xml:lang="pi">m</w></q></def>
+							<cit>
+								<bibl>\Kacctwo I.1,7</bibl>
+								<quote>vaggā pañcapañcaso <oRef/>ā</quote>
+							</cit>
+						</sense>
+					</re>
+					<re type="sub"><form>
+							<orth><choice>
+									<expan>makāra</expan>
+									<abbr>°\=/kāra</abbr>
+								</choice></orth>
+						</form>
+						<gramGrp>
+							<gen>\m</gen>
+						</gramGrp>
+						<sense>
+							<def>the consonant <q><w xml:lang="pi">m</w></q></def>
+							<cit>
+								<bibl>\Sv 106,\lines{3}</bibl>
+								<quote><oRef/>o pan’ ettha padasandhikaraṇatthaṃ vutto</quote>
+							</cit>
+							<cit>
+								<bibl>\Sv 1025,\lines{32}</bibl>
+								<quote><oRef/>o padasandhimattaṃ</quote>
+							</cit>
+							<cit type="id">
+								<bibl>\Mp IV 199,\lines{3}</bibl>
+							</cit>
+							<cit>
+								<bibl>\Mp III 113,\lines{3}</bibl>
+								<quote><oRef/>o padasandhikaro</quote>
+							</cit>
+							<cit>
+								<bibl>\Mp III 114,\lines{5}</bibl>
+								<quote><oRef/>o nipātamattaṃ</quote>
+							</cit>
+							<cit>
+								<bibl>\Ita II 5,\lines{10}</bibl>
+								<quote><oRef/>o padasandhivasena vutto</quote>
+							</cit>
+							<cit type="sim">
+								<bibl>\Ja III 20,\lines{1–2}</bibl>
+								<quote><oRef/>o pana vyañjanasandhivasena vutto</quote>
+							</cit>
+							<!-- <note> \Ee, \Se so; \Be <q
+xml:lang='pi'>padavyañjana-</q>, \prob.
+\wr </note> -->
+							<cit>
+								<bibl>\PjII
+						404,\lines{21}</bibl>
+								<quote>dakāro ca padasandhikaro \dots\ <oRef/>o viya</quote>
+							</cit>
+							<cit>
+								<bibl>\Ja I 363,\lines{19}</bibl>
+								<quote>vyañjanasandhivasena <oRef/>aṃ ādāya</quote>
+							</cit>
+							<cit>
+								<bibl>\Apa 375,\lines{5}</bibl>
+								<quote><oRef/>assa rakāraṃ katvā</quote>
+							</cit>
+							<!-- <note> \Ee so; \Be,
+\Se <q xml:lang='pi'>yakāraṃ</q> </note> -->
+							<cit>
+								<bibl>\Kaccv 11,\lines{9}</bibl>
+								<quote>sare pare yakāro vakāro <oRef/>o dakāro \dots\ imā āgamā honti</quote>
+							</cit>
+							<cit type="id">
+								<bibl>\Sadd 618,\lines{21--22}</bibl>
+								<note>\Kaccv \textit{so;} \Sadd <q><w xml:lang="pi">ime</w></q></note>
+							</cit>
+							<cit>
+								<bibl>\Kaccv 164,\lines{15}</bibl>
+								<quote>gamu icc etassa dhātussa anto <oRef/>o ccho hoti vā</quote>
+							</cit>
+							<cit type="id">
+								<bibl>\Sadd 828,\lines{2}</bibl>
+							</cit>
+						</sense>
+						<re type="sub2">
+							<form>
+								<orth><choice>
+									<expan>makāranta</expan>
+									<abbr>’\=/anta</abbr>
+								</choice></orth>
+							</form>
+							<gramGrp>
+								<gen>\mfn</gen>
+							</gramGrp>
+							<sense>
+								<def>ending in/with the consonant <q><w xml:lang="pi">m</w></q></def>
+								<cit>
+									<bibl>\Sp 969,\lines{29}</bibl>
+									<quote>buddhaṃ saraṇaṃ gacchāmī ti evaṃ ekasambaddhāni
+						anunāsikantāni vā katvā dātabbāni, buddhaṃ saraṇaṃ gacchāmī ti
+						evaṃ vicchinditvā <oRef/>āni vā katvā dātabbāni</quote>
+								</cit>
+								<cit>
+									<bibl>\Kaccv 2,\lines{19}</bibl>
+									<quote>kakārādayo <oRef/>ā pañcapañcaso akkharavanto vaggā nāma
+						honti</quote>
+								</cit>
+								<cit type="sim">
+									<bibl>\Sadd 606,\lines{9}</bibl>
+									<quote>kakārādayo <oRef/>ā vaggā nāma bhavanti</quote>
+								</cit>
+							</sense>
+						</re>
+					</re>
+				</entry>
+				<entry type="main" n="2">
+					<form>
+						<orth type="print">ma</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<etym>\ts</etym>
+					<sense n="1">
+						<def>the pronominal stem <q><w xml:lang="pi">ma</w></q>\=/</def>
+						<cit>
+							<bibl>\Kaccv 209,\lines{9}</bibl>
+							<quote>i ya ta <oRef/>\ ki esa icc etesaṃ sabba\-nāmānaṃ</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Sadd 865,\lines{25}</bibl>
+						</cit>
+						<cit>
+							<bibl>\Sadd 865,\lines{31}</bibl>
+							<quote><oRef/>\ iti ādeseka\-desena amha\-saddaṃ</quote>
+						</cit>
+					</sense>
+					<sense n="2">
+						<def>the verbal ending <q><w xml:lang="pi">ma</w></q></def>
+						<cit>
+							<bibl>\Kacctwo III.1,425</bibl>
+							<quote>vattamānā ti anti si tha mi <oRef/>\ te ante se vhe e mhe</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Sadd 821,\lines{15}</bibl>
+						</cit>
+						<cit>
+							<bibl>\Kacctwo III.1,426</bibl>
+							<quote>pañcamī tu antu hi tha mi <oRef/>\ taṃ antaṃ ssu vho e āmase</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Sadd 821,\lines{18}</bibl>
+						</cit>
+						<cit>
+							<bibl>\Kaccv 147,\lines{10}</bibl>
+							<quote>mi <oRef/>\ iti uttama\-purisā</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Sadd 811,\lines{24}</bibl>
+						</cit>
+					</sense>
+					<sense n="3">
+						<def>the suffix <q><w xml:lang="pi">ma</w></q> for forming ordinal numbers</def>
+						<cit>
+							<bibl>\Kacctwo II.8,375</bibl>
+							<quote>saṅkhyā\-pūraṇe <oRef/>o; <note><bibl>\Kaccv
+135,\lines{14}</bibl>: <quote>saṅkhyā\-pūraṇatthe <oRef/>-paccayo
+hoti</quote></note></quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="main" n="3">
+					<form>
+						<orth type="print">ma</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<etym>\ts</etym>
+					<sense n="1">
+						<def>the moon</def>
+						<cit>
+							<bibl>\Sadd 243,\lines{17--20}</bibl>
+							<quote><oRef/>o vuccati cando \dots\ Ekakkhara\-kosato nayaṃ gahetvā
+<oRef/>o Sivo candimā cevā ti</quote>
+						</cit>
+					</sense>
+					<sense n="2">
+						<def>\ep of Siva</def>
+						<cit>
+							<bibl>\Sadd 243,\lines{20}</bibl>
+							<xr> \textit{see} <ref>ma\textsuperscript{3}, 1</ref></xr>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="main">
+					<form>
+						<orth type="print">maṃ</orth>
+					</form>
+					<gramGrp>\sg \acc and form \iic of <ref>ahaṃ</ref>
+					</gramGrp>
+					<etym>\Skrt <q><w xml:lang="sa">mad</w></q></etym>
+					<sense>
+						<def>I, I myself</def>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃgiri</orth>
+°\=/<orth type="print">giri</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<sense>
+						<def>my mountain</def>
+						<cit>
+							<bibl>\Ja V 90,\lines{25*}</bibl>
+							<quote>ehi <oRef/>im āruyha</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃtāṇa</orth>
+°\=/<orth type="print">tāṇa</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>having me as protection</def>
+						<cit>
+							<bibl>\SN IV 315,\lines{23} \textit{\foll}</bibl>
+							<quote>ete hi \dots\ maṃdīpā maṃleṇā <oRef/>ā maṃsaraṇā viharanti</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃdīpa</orth>
+°\=/<orth type="print">dīpa</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>having me as island</def>
+						<cit>
+							<bibl>\SN IV 315,\lines{23} \textit{\foll}</bibl>
+							<xr> \textit{see} <ref type="c">maṃtāṇa</ref> °\=/<ref>tāṇa</ref></xr>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃleṇa</orth>
+°\=/<orth type="print">leṇa</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>having me as shelter</def>
+						<cit>
+							<bibl>\SN IV 315,\lines{23} \textit{\foll}</bibl>
+							<xr> \textit{see} <ref type="c">maṃtāṇa</ref> °\=/<ref>tāṇa</ref></xr>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsaraṇa</orth>
+°\=/<orth type="print">saraṇa</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>having me as refuge</def>
+						<cit>
+							<bibl>\SN IV 315,\lines{23} \textit{\foll}</bibl>
+							<xr> \textit{see} <ref type="c">maṃtāṇa</ref> °\=/<ref>tāṇa</ref></xr>
+						</cit>
+					</sense>
+				</entry>
+				<!-- checked: cross ref. in DoP I, II  -->
+				<entry type="main">
+					<form>
+						<orth type="print">maṃsa</orth>
+					</form>
+					<gramGrp>
+						<gen>\n</gen>
+					</gramGrp>
+					<etym>\Skrt <q><w xml:lang="sa">māṃsa</w></q></etym>
+					<sense n="1">
+						<gramGrp>\sg and \pl</gramGrp>
+						<def>flesh, tissue; meat</def>
+						<cit>
+							<bibl>\Vin I 83,\lines{2}</bibl>
+							<quote>puttapemaṃ bhante chaviṃ chindati, chaviṃ chetvā cammaṃ
+\dots\ <oRef/>aṃ chindati, <oRef/>aṃ chetvā nhāruṃ \dots\
+aṭṭhiṃ \dots\ aṭṭhimiñjaṃ āhacca tiṭṭhati</quote>
+						</cit>
+						<!-- maṃsa = flesh -->
+						<cit>
+							<bibl>\Vin I 218,\lines{34--37}</bibl>
+							<quote>attano pi <oRef/>āni pariccattāni \dots\ na ca
+bhikkhave appaṭivekkhitvā <oRef/>aṃ paribhuñjitabbaṃ</quote>
+						</cit>
+						<!-- maṃsa = flesh, and in plural -->
+						<!-- <cit> -->
+						<!-- 	<bibl>\Vin I 237,\lines{26}</bibl> -->
+						<!-- 	<quote>taṃ samaṇo Gotamo jānaṃ uddissakataṃ <oRef/>aṃ -->
+						<!-- 	paribhuñjati paṭiccakamman ti</quote> -->
+						<!-- </cit> -->
+						<!--  = \M I 368,25, \A IV 187,19; s.u.  -->
+						<cit>
+							<bibl>\Vin III 80,\lines{14} \textit{\foll}</bibl>
+							<quote>aññatarassa bhikkhuno bhuñjantassa <oRef/>aṃ kaṇṭhe
+vilaggaṃ hoti</quote>
+						</cit>
+						<cit>
+							<bibl>\Vin III 251,\lines{21}</bibl>
+							<quote>yesaṃ <oRef/>aṃ kappati tesaṃ \dots</quote>
+						</cit>
+						<cit>
+							<bibl>\Vin IV 83,\lines{4} \textit{\foll}</bibl>
+							<quote>bhojaniyaṃ nāma pañca bhojanāni odano kummāso sattu
+maccho <oRef/>aṃ</quote>
+						</cit>
+						<!-- maṃsa in a list -->
+						<cit>
+							<bibl>\Vin IV 88,\lines{24}</bibl>
+							<quote>paṇīta\-bhojanāni seyyath' īdaṃ sappi
+navanītaṃ telaṃ madhu phāṇitaṃ maccho <oRef/>aṃ khīraṃ
+dadhi</quote>
+						</cit>
+						<!-- maṃsa in a list -->
+						<cit>
+							<bibl>\Vin IV 347,\lines{32}</bibl>
+							<quote>yā pana bhikkhunī agilānā <oRef/>aṃ viññāpetvā
+bhuñjeyya, paṭidesetabbaṃ</quote>
+						</cit>
+						<!-- Pāṭimokkha -->
+						<cit>
+							<bibl>\D I 166,\lines{10}</bibl>
+							<quote>acelako \dots\ na macchaṃ na <oRef/>aṃ na sūram na merayaṃ
+na thusodakaṃ pivati</quote>
+						</cit>
+						<cit>
+							<bibl>\M I 190,\lines{18}</bibl>
+							<quote>aṭṭhiṃ ca paṭicca nahāruṃ ca paṭicca <oRef/>aṃ ca paṭicca
+cammaṃ ca paṭicca ākāso parivārito rūpan t' eva saṅkhaṃ
+gacchati</quote>
+						</cit>
+						<cit>
+							<bibl>\M I 368,\lines{25}--369,\lines{5}</bibl>
+							<quote>taṃ samaṇo Gotamo jānaṃ uddissakaṭaṃ <oRef/>aṃ
+paribhuñjati paṭiccakamman ti [= <bibl>\Vin I 237,\lines{26}
+\textit{\foll;} \A IV 187,\lines{19} \textit{\foll}</bibl>]
+\dots\ tīhi kho ahaṃ Jīvaka ṭhānehi <oRef/>aṃ aparibhogan ti
+vadāmi: diṭṭhaṃ sutaṃ parisaṅkitaṃ</quote>
+						</cit>
+						<cit>
+							<bibl>\Dhp 152</bibl>
+							<quote>balivaddo \dots\ <oRef/>āni tassa vaḍḍhanti</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Th 1025</bibl>
+						</cit>
+						<cit>
+							<bibl>\Sn 434</bibl>
+							<quote><oRef/>esu khīyamānesu bhiyyo cittaṃ pasīdati</quote>
+						</cit>
+						<!-- <cit> -->
+						<!-- 	<bibl>\Ja I 149,\lines{26}</bibl> -->
+						<!-- 	<quote>Bārāṇasi\-rājā \dots\ vinā <oRef/>ena na bhuñjati</quote> -->
+						<!-- </cit> -->
+						<cit>
+							<bibl>\Ja I 394,\lines{15'}</bibl>
+							<quote>nakhapattāni <oRef/>ato amuttaṭṭhāne lākhārasapūritāni
+viya</quote>
+						</cit>
+						<cit type="sim">
+							<bibl>\Vism 260,\lines{25--26} \textit{\foll}</bibl>
+							<quote>kesa\-loma\-danta\-nakhānaṃ <oRef/>-vinimutta\-ṭṭhānaṃ;
+<note>\textit{\cf} <bibl>\Vismmht I 449,\lines{22}</bibl>: <!--
+check line numbers! -->
+									<quote>kesādīnam pi hi <oRef/>ato
+avimuttabhāgo</quote></note></quote>
+						</cit>
+						<cit>
+							<bibl>\Ja I 489,\lines{17}</bibl>
+							<quote>gāyitvā suraṃ pivanti <oRef/>aṃ khādanti</quote>
+						</cit>
+						<cit>
+							<bibl>\Ja I 494,\lines{17}</bibl>
+							<quote><oRef/>aṃ pacitvā khāditvā</quote>
+						</cit>
+						<!-- <cit> -->
+						<!-- 	<bibl>\Ja III 128,\lines{2*}</bibl> -->
+						<!-- 	<quote>kākaṃ tattha apūjesuṃ <oRef/>ena ca phalena ca</quote> -->
+						<!-- </cit> -->
+						<cit>
+							<bibl>\Ja III 151,\lines{5*}</bibl>
+							<quote>asi tikkho va <oRef/>amhi pesuññaṃ parivattati</quote>
+						</cit>
+						<cit>
+							<bibl>\Ja III 186,\lines{13'}</bibl>
+							<quote>cammehi cammaṃ
+<oRef/>ehi <oRef/>aṃ nahārūhi nahāruṃ paṭipādetvā</quote>
+						</cit>
+						<!-- the sole occurence of \instr \pl -->
+						<cit>
+							<bibl>\Ja III 296,\lines{26*}</bibl>
+							<quote>sāduṃ ca thullaṃ ca muduṃ ca <oRef/>aṃ</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Ja V 166,\lines{3*}</bibl>
+						</cit>
+						<cit>
+							<bibl>\Ja V 12,\lines{18}</bibl>
+							<quote><oRef/>aṃ aṅgāresu pacitvā</quote>
+						</cit>
+						<cit>
+							<bibl>\Ja V 458,\lines{16}</bibl>
+							<quote><oRef/>ena vinā bhattaṃ na bhuñjati</quote>
+						</cit>
+						<!--     <cit> -->
+						<!-- <bibl>\Ja V 461,\lines{20*}</bibl> -->
+						<!-- <quote>hanāsi itthī purise ca mūḷho <oRef/>assa hetu adu dhanassa -->
+						<!-- kāraṇā ti</quote> -->
+						<!--     </cit> -->
+						<!-- occurence in genitive -->
+						<cit>
+							<bibl>\Ja V 505,\lines{26*}</bibl>
+							<quote>catuppadaṃ sakuṇaṃ cāpi <oRef/>aṃ</quote>
+						</cit>
+						<cit>
+							<bibl>\Ja VI 416,\lines{12*}</bibl>
+							<quote>yathāpi maccho balisaṃ vaṃkaṃ <oRef/>ena chāditaṃ
+āmagiddho na jānāti</quote>
+						</cit>
+						<cit>
+							<bibl>\Ja VI 580,\lines{21*}</bibl>
+							<quote><oRef/>ā pūvā saṃkuliyo kummāsā macchasaṃyutā maggamhi
+patitiṭṭhantu</quote>
+						</cit>
+						<cit>
+							<bibl>\Vibh 82,\lines{10}</bibl>
+							<quote>kesā lomā nakhā dantā taco <oRef/>aṃ nahāru \dots</quote>
+						</cit>
+						<cit>
+							<bibl>\Mil 74,\lines{7}</bibl>
+							<quote><oRef/>assa rūhanatthāya ālepena ca ālimpīyati</quote>
+						</cit>
+						<!-- occurence in \gen -->
+						<cit>
+							<bibl>\Vism 354,\lines{32}</bibl>
+							<quote><oRef/>aṃ nāma imasmiṃ sarīre pāṭiyekko kotthāso acetano
+avyākato suñño nissatto thaddho pathavī\-dhātū ti</quote>
+						</cit>
+						<cit>
+							<bibl>\Sp 827,\lines{14}</bibl>
+							<quote><oRef/>aṃ visuṃ katvā maṃsa\-rasaṃ gaṇhathā ti</quote>
+						</cit>
+						<cit>
+							<bibl>\Sv 927,\lines{11}</bibl>
+							<quote>lūkha\-bhojane kucchi\-gate \dots\ <oRef/>aṃ milāyati</quote>
+						</cit>
+						<cit>
+							<bibl>\Ps I 215,\lines{30}</bibl>
+							<quote>valittacatā ti iminā <oRef/>aṃ milāpetvā</quote>
+						</cit>
+						<cit>
+							<bibl>\Ps III 65,\lines{1}</bibl>
+							<quote>devatā \dots\ āvudhāni mahājanassa upari phalake <oRef/>aṃ
+koṭṭayamānā viya pātayiṃsu</quote>
+						</cit>
+						<!-- <cit type='sim'> -->
+						<!--   <bibl>\Ps IV 237,\lines{7}</bibl> -->
+						<!--   <quote>hattham pi chindantī ti phalake maṃsaṃ viya koṭṭayamānāni -->
+						<!--   chindanti</quote> -->
+						<!-- </cit> -->
+						<cit>
+							<bibl>\PjI 45,\lines{21}</bibl>
+							<quote>taca\-parigaṇhakena ca yogāvacarena \dots\ tacassa
+<oRef/>assa ca antarena cittaṃ pesentena</quote>
+						</cit>
+						<cit>
+							<bibl>\Tha II 111,\lines{5}</bibl>
+							<quote>aṭṭhi\-saṅghāto \dots\ <oRef/>ena anupalitto</quote>
+						</cit>
+						<cit>
+							<bibl>\Bhes 2:88</bibl>
+							<quote>na hi <oRef/>-samaṃ kiñci aññaṃ dehassa vaḍḍhanaṃ</quote>
+						</cit>
+						<cit type="borrowed">
+							<bibl>\AstaHrSam Sū.14:35</bibl>
+						</cit>
+						<!-- <cit> -->
+						<!--   <bibl>\Bhes 10:137</bibl> -->
+						<!--   <quote>khaye maṃsaṃ <note><q xml:lang='en'>meat [is prescribed] for -->
+						<!--   consumption</q></note></quote> -->
+						<!-- </cit> -->
+					</sense>
+					<sense>
+						<def>flesh as one of the 31 or 32 constituents of the human body</def>
+						<cit>
+							<bibl>\D II 293,\lines{13}</bibl>
+							<quote>atthi imasmiṃ kāye kesā lomā nakhā dantā taco <oRef/>aṃ
+nahārū \dots\ muttan ti</quote>
+							<!-- atthi imasmiṃ kāye kesā lomā nakhā dantā taco maṃsaṃ nahārū -->
+							<!-- aṭṭhī aṭṭhimiñjā vakkaṃ hadayaṃ yakanaṃ kilomakaṃ pihakaṃ -->
+							<!-- papphāsaṃ antaṃ antaguṇaṃ udariyaṃ karīsaṃ pittaṃ semhaṃ -->
+							<!-- pubbo lohitaṃ sedo medo assu vasā kheḷo siṅghāṇikā lasikā -->
+							<!-- muttan ti -->
+						</cit>
+						<cit type="sim">
+							<bibl>\Khp 2,\lines{6}</bibl>
+							<quote>\dots\ muttaṃ matthake matthaluṅgaṃ</quote>
+						</cit>
+						<!-- \textit{explained} <bibl>\Vism 252,\lines{24} -->
+						<!-- \textit{\foll;} 354,\lines{26} -->
+						<!-- \textit{\foll;} \PjI 45,\lines{21}</bibl> -->
+						<cit>
+							<bibl>\Vism 242,\lines{10}</bibl>
+							<quote>vakka\-pañcake <oRef/>aṃ nahāru aṭṭhi aṭṭhimiñjaṃ vakkan
+ti</quote>
+						</cit>
+						<xr>\textit{\ifc see}
+<ref type="c">akkhikamaṃsa</ref>
+							<ref>akkhika</ref>\=/\
+(\textit{\sv} <ref>akkhika\textsuperscript{2}</ref>),
+<ref type="c">aṅgāramaṃsa</ref>
+							<ref>aṅgāra</ref>\=/,
+<ref type="c">kuramaṃsa</ref>
+							<ref>kura</ref>\=/,
+<!-- (\wr <ref>kuru-</ref>), -->
+							<ref type="c">gaṇḍamaṃsa</ref>
+							<ref>gaṇḍa</ref>\=/,
+<ref type="c">cuṇṇikamaṃsa</ref>
+							<ref>cuṇṇika</ref>\=/\
+(\textit{\sv} <ref>cuṇṇiya</ref>\=/),
+<ref type="c">pavattamaṃsa</ref>
+							<ref>pavatta</ref>\=/\
+(\textit{\sv} <ref>pavattati</ref>),
+<ref type="c">piṭṭhimaṃsa</ref>
+							<ref>piṭṭhi</ref>\=/,
+<ref type="c">piṇḍikamaṃsa</ref>
+							<ref>piṇḍika</ref>\=/\
+(\textit{\sv} <ref>piṇḍikā</ref>)</xr>
+					</sense>
+					<sense n="2">
+						<gramGrp>\sg and \pl</gramGrp>
+						<def>type of meat</def>
+						<cit>
+							<bibl>\Vin V 139,\lines{31}</bibl>
+							<quote>dasa <oRef/>ā akappiyā</quote>
+						</cit>
+						<cit>
+							<bibl>\Vin V 210,\lines{15--17*}</bibl>
+							<quote>eka-<oRef/>e thullaccayaṃ nava-<oRef/>esu dukkaṭaṃ;
+<note><bibl>\Sp 1381,\lines{32--33}</bibl>: eka-<oRef/>e
+thullaccayan ti manussa-<oRef/>e. nava <oRef/>esu dukkaṭan ti sesa
+akappiya-<oRef/>esu</note></quote>
+						</cit>
+						<cit>
+							<bibl>\Sp 714,\lines{8--9}</bibl>
+							<quote><oRef/>esu hi dasa
+manussa-hatthi-assa-suṇakha-ahi-sīha-byaggha-dīpi-accha-taracchānaṃ
+<oRef/>āni akappiyāni</quote>
+						</cit>
+						<cit>
+							<bibl>\Mil 67,\lines{29} \textit{\foll}</bibl>
+							<quote>yā tā santi sīhiniyo pi byagghiniyo pi \dots\ kin nu tā
+kakkhaḷāni aṭṭhikāni <oRef/>āni khādantīti</quote>
+						</cit>
+						<xr>\textit{\ifc see}
+<ref type="c">eka\-saṃ\-vaccharika\-sūkara\-maṃsa</ref>
+							<ref>eka\-saṃ\-vaccharika\-sūkara</ref>\=/\
+(\textit{\sv} <ref>eka</ref>\=/)</xr>
+					</sense>
+					<!-- ggf hier noch weitere Belege für maṃsa ifc hinzufügen, -->
+					<!-- falls die entsprechenden Komposita nicht separat behandelt werden; -->
+					<!-- z.B. (a)kappiya-~ -->
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsūpasecana</orth>
+						<orth type="csm">upasecana</orth>
+						<!-- ref. s.v. -->
+°’\=/<orth type="print">ūpasecana</orth>
+					</form>
+					<gramGrp>
+						<pos/>
+						<gen/>
+					</gramGrp>
+					<sense>
+						<def/>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsakarambaka</orth>
+°\=/<orth type="print">karambaka</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<sense>
+						<def>rice gruel with meat</def>
+						<cit>
+							<bibl>\Sp 827,\lines{27}</bibl>
+							<quote><oRef/>o nāma hoti taṃ dātukāmo 'pi karambakaṃ gaṇhathā
+ti vadati vaṭṭati na pavāreti. <oRef/>an ti vā idan ti vā
+vutte pana pavāreti; <note>\textit{quoted and explained}
+<bibl>\Sp-t III 62,\lines{4} \textit{\foll}</bibl>;
+<bibl>\VjbKP B [Z 222]</bibl></note></quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsakalyāṇa</orth>
+°\=/<orth type="print">kalyāṇa</orth>
+					</form>
+					<gramGrp>
+						<gen>\n</gen>
+					</gramGrp>
+					<sense>
+						<def>beauty of flesh (according to \cts either red hands and
+feet, or red and fresh lips; one of the five beauties of a young
+woman)</def>
+						<cit>
+							<bibl>\Spk III 227,\lines{24} \textit{\foll}</bibl>
+							<quote>chavi\-kalyāṇaṃ <oRef/>aṃ nahārukalyāṇaṃ aṭṭhikalyāṇaṃ
+vayakalyāṇan ti \dots\ cattāro pan' assā hattha\-pādā
+mukha\-pariyosānaṃ ca lākhā\-pari\-kamma\-katā viya
+ratta\-pavāḷa\-ratta\-kambala\-sadisā hoti. ayam assā
+<oRef/>atā</quote>
+						</cit>
+						<cit>
+							<bibl>\Dhpa I 387,\lines{15} \textit{\foll}</bibl>
+							<quote>\dots\ <oRef/>aṃ \dots\ mahā\-puññāya hi itthiyā \dots\
+dantā\-varaṇaṃ bimba\-phala\-sadisaṃ vaṇṇa\-sam\-pannaṃ samaṃ
+su\-phassitaṃ hoti, idaṃ <oRef/>aṃ nāma</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsakasambu</orth>
+°\=/<orth type="print">kasambu</orth>
+					</form>
+					<gramGrp><gen>\m</gen>\textup{(?)}</gramGrp>
+					<sense>
+						<def>rotten meat</def><note>? </note>
+						<cit>
+							<bibl>\Vism 258,\lines{28}</bibl>
+							<quote>udaraṃ nāma \dots\ anto
+<oRef/>\=/pali\-veṭhana\-kiliṭṭha\-pāvāraka\-pupphaka\-sadisaṃ,
+	<note>\textit{\Be, \Ce, \Ee so; \Se} <q><w xml:lang="pi">\=/kiliṭṭhaṃpāvāra\-pupphaka\=/</w></q></note></quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Vibha 242,\lines{2}</bibl>
+						</cit>
+						<cit type="sim">
+							<bibl>\PjI 58,\lines{3}</bibl>
+							<quote>\dots\ <oRef/>\=/pali\-veṭhitaṃ
+kiliṭṭha\-pāvāra\-puppha\-sadisaṃ</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsakāya</orth>
+°\=/<orth type="print">kāya</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<sense>
+						<def>totality of flesh, entirety o.\ f.</def>
+						<cit>
+							<bibl>\M III 274,\lines{33} \textit{\foll}</bibl>
+							<quote>go\-ghātako \dots\ gāviṃ vadhitvā \dots\ anupa\-hacca
+antaraṃ <oRef/>aṃ \dots\ antarā cilīmaṃ \dots\
+saṃ\-chindeyya</quote>
+						</cit>
+						<cit>
+							<bibl>\Patis II 232,\lines{28}</bibl>
+							<quote>idh' ekacco \dots\ camma\-kāyaṃ <oRef/>yaṃ rudhira\-kāyaṃ
+\dots\ aniccato anu\-passati</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsakoṭṭana</orth>
+°\=/<orth type="print">koṭṭana</orth>
+						<!-- ref. s.v. -->
+					</form>
+					<note>\textit{in:} </note>
+					<re>
+						<form>
+							<orth type="c">maṃsakoṭṭanapotthanī</orth>
+							<oRef/>\=/<orth type="print">potthanī</orth>
+						</form>
+						<gramGrp>
+							<gen>\f</gen>
+						</gramGrp>
+						<sense>
+							<def>a knife for cutting meat</def>
+							<cit>
+								<bibl>\Ja VI 86,\lines{20'}</bibl>
+								<quote><oRef/>\=/potthaniyā aggaṃ viya vinatā [\textit{\scil} kesā]</quote>
+							</cit>
+						</sense>
+					</re>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsakhaṇḍa</orth>
+°\=/<orth type="print">khaṇḍa</orth>
+					</form>
+					<gramGrp>
+						<gen>\n</gen>
+						<!-- \sv khaṇḍa: \m \n; but maṃsakhaṇḍa \m not to be found -->
+					</gramGrp>
+					<sense>
+						<def>a piece of meat, a.\ p.\ o.\ tissue</def>
+						<cit>
+							<bibl>\Ja I 274,\lines{24}</bibl>
+							<quote>mugga\-bīja\-mattam pi <oRef/>aṃ mayhaṃ kucchi jīretuṃ
+	na sakkhissati, <note>\textit{\Be so; \Ee, \Se} <q><w xml:lang="pi">kucchiṃ</w></q></note></quote>
+						</cit>
+						<cit>
+							<bibl>\Ja VI 62,\lines{25}</bibl>
+							<quote>sūṇato mahantaṃ <oRef/>aṃ kiṇitvā sūlena aṅgāresu
+pacāpetvā</quote>
+						</cit>
+						<cit>
+							<bibl>\Vism 257,\lines{30}</bibl>
+							<quote>dvattiṃsa-<oRef/>-ppabhedaṃ papphāsa\-maṃsaṃ</quote>
+						</cit>
+						<cit>
+							<bibl>\Dhpa III 333,\lines{22}</bibl>
+							<quote><oRef/>aṃ mukhe ṭhapesi</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsakkhaya</orth>
+						<orth type="csm">khaya</orth>
+°\=/<orth type="print">kkhaya</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<etym><q><w xml:lang="pi">maṃsa + khaya\textsuperscript{2}</w></q></etym>
+					<sense>
+						<def>lack of meat</def>
+						<cit>
+							<bibl>\Ja I 489,\lines{20}</bibl>
+							<quote><oRef/>o nāma natthī ti</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsakhala</orth>
+°\=/<orth type="print">khala</orth>
+					</form>
+					<gramGrp>
+						<gen>\m or \n</gen>
+					</gramGrp>
+					<etym><q><w xml:lang="pi">maṃsa + khala\textsuperscript{2}</w></q> \textup{?}</etym>
+					<sense>
+						<def>a mash of flesh</def>
+						<cit>
+							<bibl>\D I 52,\lines{28}</bibl>
+							<quote>khura\-pari\-yantena ce pi cakkena yo imissā pathaviyā
+pāṇe ekaṃ <oRef/>aṃ ekaṃ maṃsa\-puñjaṃ kareyya,
+	<note>\textit{\Be, \Se so; \Ce, \Ee} <q><w xml:lang="pi">eka-<oRef/>aṃ eka\-maṃsa\-puñjaṃ</w></q></note></quote>
+							<!-- <w> trifft es hier nicht ganz, was du meinst, oder? Wieso ist aber für "eka-<oRef/>aṃ eka\-maṃsa\-puñjaṃ" die Sprache ausgewiesen für "aṃ ekaṃ maṃsa\-puñjaṃ kareyya," kanpp darüber aber nicht?-->
+						</cit>
+						<cit>
+							<bibl>\M I 377,\lines{23}</bibl>
+							<quote>pāṇā te \dots\ ekaṃ <oRef/>aṃ ekaṃ maṃsa\-puñjaṃ karissāmī
+	ti, <note>\textit{\Be, \Se so; \Ce, \Ee} <q><w xml:lang="pi">eka-<oRef/>aṃ eka\-maṃsa\-puñjaṃ</w></q></note></quote>
+							<!-- s.o. -->
+						</cit>
+					</sense>
+					<xr>\textit{see also}
+<ref>ekamaṃsakhala</ref></xr>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsakhādaka</orth>
+						<!-- ref. \sv khādaka -->
+°\=/<orth type="print">khādaka</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen> and
+<gen>\m</gen>
+					</gramGrp>
+					<sense>
+						<def>eating meat, a meat eater</def>
+						<cit>
+							<bibl>\Ja II 37,\lines{16--17}</bibl>
+							<quote>tvaṃ suvaṇṇa\-vaṇṇo, tasmā kira tava maṃsaṃ khādakā
+ajarāmarā bhavissantī ti, <note>\textit{\Ee \prob \wr for}
+	<q><w xml:lang="pi"><oRef/>ā</w></q>; \textit{\Be, \Se} <q><w xml:lang="pi">maṃsāni khāditvā</w></q></note></quote>
+							<!-- <w> s.o, -->
+						</cit>
+						<cit>
+							<bibl>\Ja II 406,\lines{24--25}</bibl>
+							<quote>tena pana gahita-<oRef/>o eko kūṭa\-jaṭilo atthi</quote>
+						</cit>
+						<cit>
+							<bibl>\Ja III 113,\lines{11--12}</bibl>
+							<quote>na tvaṃ vāraṇaṃ vadhitvā <oRef/>\=/yoniyaṃ nibbatto,
+	<note>\textit{\Be so; \Ee, \Se} <q><w xml:lang="pi">maṃsaṃ khādaka\=/</w></q></note></quote>
+						</cit>
+						<cit>
+							<bibl>\Ja VI 350,\lines{20}</bibl>
+							<quote>nāyaṃ <oRef/>o ti bhatta\-kārako mayi āsaṃkaṃ na
+karissati</quote>
+						</cit>
+						<cit>
+							<bibl>\Apa 459,\lines{8}</bibl>
+							<quote>nibbatto rakkhaso para\-rudhira-<oRef/>o</quote>
+						</cit>
+					</sense>
+					<xr>\textit{see also}
+<ref>piṭṭhimaṃsika</ref>
+					</xr>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsacakkhu</orth>
+°\=/<orth type="print">cakkhu</orth>
+						<!-- ref. s.v. -->
+					</form>
+					<gramGrp>
+						<gen>\n</gen>
+					</gramGrp>
+					<sense>
+						<def>the fleshly eye, the natural faculty of sight</def>
+						<cit>
+							<bibl>\D II 329,\lines{15}</bibl>
+							<quote>na kho rājañña evaṃ paraloko daṭṭhabbo yathā tvaṃ
+maññasi iminā <oRef/>unā</quote>
+						</cit>
+						<cit>
+							<bibl>\It 52,\lines{19*}</bibl>
+							<quote><oRef/>ussa uppādo maggo dibbassa cakkhuno</quote>
+						</cit>
+						<cit type="quoted">
+							<bibl>\Kv 254,\lines{5*}</bibl>
+						</cit>
+						<cit type="sim">
+							<bibl>\Mil 123,\lines{2}</bibl>
+							<quote>yaṃ pana sutte vuttaṃ: <oRef/>usmiṃ naṭṭhe ahetusmiṃ
+avatthumhi n' atthi dibba\-cakkhussa uppādo ti</quote>
+						</cit>
+						<cit>
+							<bibl>\NiddI 355,\lines{11}</bibl>
+							<quote>bhagavā pākatikena <oRef/>unā atta\-bhāva\-pariyā\-pannena
+purima\-sucarita\-kammā\-bhini\-bbattena samantā yojanaṃ passati
+divā c' eva rattiṃ ca</quote>
+						</cit>
+						<!--       <cit type='id'> -->
+						<!--   <bibl>\NiddI 449,\lines{14}</bibl> -->
+						<!--       </cit> -->
+						<!--       <cit type='id'> -->
+						<!--   <bibl>\NiddII 134,\lines{16}</bibl> -->
+						<!-- </cit> -->
+						<!-- <cit type='sim'> -->
+						<!--  <bibl>\Apa 272,\lines{1}</bibl> -->
+						<!--  <quote>divārattiñ ca passāmī ti tadā devaloke ca manussaloke ca -->
+						<!--  uppannakāle maṃsacakkhunā samantato yojanaṃ passāmī ti attho</quote> -->
+						<!-- </cit> -->
+						<!-- <cit> -->
+						<!-- <bibl>\Kv 251,\lines{30} \textit{\foll}</bibl> -->
+						<!-- <quote><oRef/>uṃ dhammu\-pa\-tthaddhaṃ dibba\-cakkhuṃ -->
+						<!-- hotīti?</quote> -->
+						<!--     </cit> -->
+						<cit>
+							<bibl>\Sp 1301,\lines{23}</bibl>
+							<quote>sabba\-sattānaṃ cakkhu\-visayā\-tītāni
+tiro\-kuṭṭā\-di\-gatāni cāpi rūpāni ativi\-suddhena <oRef/>unā ca
+passatā [\textit{\scil} bhagavatā]</quote>
+						</cit>
+						<cit type="sim">
+							<bibl>\NiddaI 377,\lines{23--24}</bibl>
+							<quote>tiro\-kuṭṭā\-di\-gataṃ rūpaṃ āvaraṇa\-virahitaṃ
+pakati-<oRef/>unā dakkhati</quote>
+						</cit>
+						<cit>
+							<bibl>\Sv 1003,\lines{1}</bibl>
+							<quote><oRef/>u cakkhu\-pasādo</quote>
+						</cit>
+						<cit>
+							<bibl>\Ps I 21,\lines{31}</bibl>
+							<quote><oRef/>unā hi dibba\-cakkhunā vā ariyā diṭṭhā pi adiṭṭhā va
+honti, tesaṃ cakkhūnaṃ vaṇṇa\-matta\-ggahaṇato, na
+ariya\-bhāva\-gocarato</quote>
+						</cit>
+						<cit>
+							<bibl>\Spk II 354,\lines{22}</bibl>
+							<quote><oRef/>u pi duvidhaṃ sasambhāra\-cakkhu pasāda\-cakkhū
+ti</quote>
+						</cit>
+						<cit>
+							<bibl>\NiddaI 238,\lines{10}</bibl>
+							<quote><oRef/>unā vā ti pakati\-cakkhunā</quote>
+						</cit>
+					</sense>
+					<sense>
+						<def>classified as one of</def>
+						<sense n="i">
+							<def>three faculties of sight</def>
+							<cit>
+								<bibl>\D III 219,\lines{11}</bibl>
+								<quote><oRef/>u dibba\-cakkhu paññā\-cakkhu</quote>
+							</cit>
+							<cit type="id">
+								<bibl>\It 52,\lines{12}</bibl>
+							</cit>
+							<cit type="quoted">
+								<bibl>\Kv 253,\lines{35}</bibl>
+							</cit>
+							<cit>
+								<bibl>\Pet 207,\lines{16}</bibl>
+								<quote>so tiṇṇaṃ cakkhūnaṃ tamo <oRef/>uno dibba\-cakkhuno
+paññā\-cakkhuno</quote>
+							</cit>
+						</sense>
+						<sense n="ii">
+							<def>five f.\ o.\ s.</def>
+							<cit>
+								<bibl>\NiddI 354,\lines{23}</bibl>
+								<quote>bhagavā pañcahi cakkhūhi vivaṭa\-cakkhu, <oRef/>unā pi
+vivaṭa\-cakkhu, dibba\-cakkhunā pi \dots\ paññā\-cakkhunā pi \dots\
+buddha\-cakkhunā pi \dots\ samanta\-cakkhunā pi \dots</quote>
+							</cit>
+							<cit type="sim">
+								<bibl>\NiddI 448,\lines{28}</bibl>
+								<note><q><w xml:lang="pi">cakkhumā</w></q> \textit{\io} <q><w xml:lang="pi">vivaṭa\-cakkhu</w></q></note>
+							</cit>
+							<cit type="sim">
+								<bibl>\Tha II 177,\lines{26}</bibl>
+								<quote><oRef/>u dibba\-cakkhu paññā\-cakkhu buddha\-cakkhu
+samanta\-cakkhū ti imehi pañcahi cakkhūhi cakkhu\-matā
+[\textit{\scil} buddhena]</quote>
+							</cit>
+						</sense>
+						<sense n="iii">
+							<def>two f.\ o.\ s.</def>
+							<cit>
+								<bibl>\Ita 99,\lines{20}</bibl>
+								<quote>duvidhaṃ cakkhu: <oRef/>u ca paññā\-cakkhu ca<!-- tesu buddha\-cakkhu -->
+									<!-- samanta\-cakkhu ñāṇa\-cakkhu dibba\-cakkhu dhamma\-cakkhū ti pañca\-vidhaṃ -->
+									<!-- paññā\-cakkhu --></quote>
+							</cit>
+							<cit type="sim">
+								<bibl>\Spk II 323,\lines{13}</bibl>
+								<quote><oRef/>unā c' eva paññā\-cakkhunā cā ti dvīhi cakkhūhi
+cakkhumā [\textit{\scil} puriso]</quote>
+							</cit>
+							<cit>
+								<bibl>\Spk II 354,\lines{8}</bibl>
+								<quote>dve cakkhūni: ñāṇa\-cakkhuṃ c' eva <oRef/>uṃ ca<!-- tattha -->
+									<!-- ñāṇa\-cakkhu pañca\-vidhaṃ: buddha\-cakkhu dhamma\-cakkhu -->
+									<!-- samanta\-cakkhu dibba\-cakkhu paññā\-cakkhū ti --></quote>
+							</cit>
+							<cit type="id">
+								<bibl>\Ita 27,\lines{2--3}</bibl>
+							</cit>
+						</sense>
+						<sense>
+							<def>described and discussed</def>
+							<cit>
+								<bibl>\NiddI 354,\lines{27} \textit{\foll}</bibl>
+							</cit>
+							<cit>
+								<bibl>\Kv 251,\lines{30} \textit{\foll}</bibl>
+							</cit>
+							<cit>
+								<bibl>\Ita II 27,\lines{31} \textit{\foll}</bibl>
+							</cit>
+							<cit>
+								<bibl>\As 306,\lines{22} \textit{\foll}</bibl>
+							</cit>
+						</sense>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsacchedaka</orth>
+						<orth type="csm">chedaka</orth>
+°\=/<orth type="print">cchedaka</orth>
+						<orth type="c">maṃsacchedana</orth>
+						<orth type="csm">chedana</orth>
+°\=/<orth type="print">cchedana</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>cutting meat</def>
+						<cit>
+							<bibl>\Ps II 128,\lines{11}</bibl>
+							<quote>asisūnan ti maṃsa\-cchedakaṃ asiṃ c' eva adhi\-kuṭṭanaṃ
+	ca, <note>\textit{\Be, \Se so; \Ee} <q><w xml:lang="pi">maṃsa\-cchedana-asiṃ</w></q></note></quote>
+						</cit>
+						<cit>
+							<bibl>\Sp 1094,\lines{11}</bibl>
+							<quote>potthanikan ti maṃsa\-cchedana\-satthakaṃ vuccati</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsadhovana</orth>
+°\=/<orth type="print">dhovana</orth>
+					</form>
+					<gramGrp>
+						<gen>\n</gen>
+					</gramGrp>
+					<form>
+						<orth type="c">maṃsadhovana-udaka</orth>
+						<oRef/>\=/<orth type="print">dhovana-udaka</orth>
+					</form>
+					<gramGrp>
+						<gen>\n</gen>
+					</gramGrp>
+					<sense>
+						<def>water in which meat has been washed (of a blackish
+colour)</def>
+						<!-- check: Aṣṭāṅgasaṅgraha Sū.27.36, Śā.11.12 -->
+						<cit>
+							<bibl>\Vism 256,\lines{26}</bibl>
+							<quote>taṃ pan' etaṃ [\textit{\scil} lohitaṃ] \dots\
+moha\-caritassa maṃsa\-dhovana-udaka\-sadisaṃ</quote>
+						</cit>
+						<cit>
+							<bibl>\Vism 343,\lines{20}</bibl>
+							<quote>maccha\-dhovana\-maṃsa\-dhovana\-taṇḍula\-dhovana-\dots-vaccādīhi
+sammissāni \dots\ oḷigallāni ceva candanika\-ṭṭhānāni ca
+daṭṭhabbāni honti</quote>
+						</cit>
+						<cit>
+							<bibl>\Spk I 301,\lines{1--2}</bibl>
+							<quote>kalalā sattāha\-ccayena maṃsa\-dhovana-udaka\-vaṇṇaṃ abbudaṃ
+nāma hoti</quote>
+						</cit>
+						<cit>
+							<bibl>\Bhes 17:9</bibl>
+							<quote>atīsāro yakim\-piṇda\-maṃsa\-dhāvana\-nīlihi \dots\ samo,
+	<note>\textit{\vl} \=/<q><w xml:lang="pi">maṃsa\-dhovana</w></q>\=/</note></quote>
+						</cit>
+						<cit type="borrowed">
+							<bibl>\AstaHrSam Śā.5:80</bibl>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsanikkhitta</orth>
+						<orth type="c">maṃsanikkhittasigāla</orth>
+						<orth type="c">maṃsanikkhittasunakha</orth>
+°\=/<orth type="print">nikkhitta</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>(a jackal or dog) that has buried meat; (as a simile for a
+forgetful or dull-witted person)</def>
+						<cit>
+							<bibl>\Spk II 142,\lines{14}</bibl>
+							<quote>muṭṭha\-ssatino
+bhatta\-nikkhitta\-kāka-<oRef/>-sigāla\-sadisā, <note>\textit{\Be, \Se
+	so; \Ee} <q><w xml:lang="pi">\=/maṃsa\-nissita\=/</w></q></note></quote>
+						</cit>
+						<cit>
+							<bibl>\Ita II 114,\lines{12--13}</bibl>
+							<quote>muṭṭha\-ssatīti bhatta\-nikkhitta\-kāko viya <oRef/>\=/sunakho viya ca
+naṭṭha\-ssati, idha kataṃ ettha na sarati, <note>\textit{\Be, \Se
+	so; \Ee} <q><w xml:lang="pi">muṭṭha\=/</w></q> \textit{\io} <q><w xml:lang="pi">naṭṭha\=/</w></q></note></quote>
+						</cit>
+						<cit>
+							<bibl>\Vismmht I 156,\lines{25}</bibl>
+							<quote>bhatta\-nikkhitta\-kāka-<oRef/>-sunakha\-sadisānaṃ
+momūha\-puggalānaṃ dūrato pariccajanā</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsanhāruppasibbita</orth>
+						<!-- ref. sv pasibbita -->
+						<orth type="c">maṃsanhārupasibbita</orth>
+						<orth type="csm">pasibbita</orth>
+°\=/<orth type="print">nhāruppasibbita</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>[plastered] with flesh and sewn together with sinews; ? (\cf
+	\eg <bibl>\Th 569--570</bibl>; K.\,R.\ Norman, 2007: <q><w xml:lang="en">sewn together with flesh and sinew</w></q>)</def>
+						<cit>
+							<bibl>\Th 1150</bibl>
+							<quote>aṭṭhi\-kaṅkala\-kuṭike <oRef/>e dhir atthu,
+<note><bibl>\Tha III 167,\lines{12--13}</bibl>:
+<quote>nahāru\-pasibbite ti navahi nahāru\-satehi samantato
+	sibbite</quote> [\textit{no mention of} <q><w xml:lang="pi">maṃsa</w></q>\=/]</note></quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsapaṭala</orth>
+°\=/<orth type="print">paṭala</orth>
+					</form>
+					<gramGrp>
+						<gen>\n</gen>
+					</gramGrp>
+					<sense>
+						<def>(\anat) a flap of flesh, a.\ f.\ o.\ tissue</def>
+						<cit>
+							<bibl>\Vism 257,\lines{3}</bibl>
+							<quote>yakanan ti yamaka-<oRef/>aṃ</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Vibha 240,\lines{10}</bibl>
+						</cit>
+						<cit type="sim">
+							<bibl>\Patisa I 81,\lines{16}</bibl>
+						</cit>
+						<cit>
+							<bibl>\Sv 449,\lines{9--10}</bibl>
+							<quote>mahā\-purisassa pana kaṭito paṭṭhāya <oRef/>aṃ yāva khandhā
+uggamma \dots\ piṭṭhiṃ chādetvā patiṭṭhitaṃ</quote>
+						</cit>
+						<cit type="sim">
+							<bibl>\Ps III 380,\lines{5}</bibl>
+							<quote>tathāgatassa pana \dots\ <oRef/>aṃ \dots</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsapariggaṇhaka</orth>
+°\=/<orth type="print">pariggaṇhaka</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>comprehending flesh</def>
+						<cit>
+							<bibl>\PjI 47,\lines{1}</bibl>
+							<quote><oRef/>ena ca yogāva\-carena</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsapiṇḍa</orth>
+°\=/<orth type="print">piṇḍa</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<form>
+						<orth type="c">maṃsapiṇḍikā</orth>
+°\=/<orth type="var">piṇḍikā</orth>
+					</form>
+					<gramGrp>
+						<gen>\f</gen>
+					</gramGrp>
+					<sense>
+						<def>(\anat) a lump of flesh, a.\ l.\ o.\ tissue; (more rarely) a
+lump of meat</def>
+						<cit>
+							<bibl>\Vin III 106,\lines{3}</bibl>
+							<quote>addasaṃ °\=/piṇḍaṃ vehāsaṃ gacchantaṃ, <note><bibl>\Sp
+	509,\lines{8}</bibl>: <q><w xml:lang="pi">maṃsa\-piṇḍa\-peto</w></q></note></quote>
+						</cit>
+						<cit type="id">
+							<bibl>\SN II 256,\lines{15}</bibl>
+						</cit>
+						<cit>
+							<bibl>\Ja III 222,\lines{13}</bibl>
+							<quote>sigālo hutvā mukhena °\=/piṇḍaṃ gahetvā</quote>
+						</cit>
+						<cit>
+							<bibl>\Ja III 378,\lines{27}</bibl>
+							<quote>mayā vissaṭṭha-°\=/piṇḍena viya senena pañca\-kāma\-guṇe
+pahāya</quote>
+						</cit>
+						<cit>
+							<bibl>\Vism 256,\lines{8}</bibl>
+							<quote>vakkan ti ekabandhanā dve °\=/piṇḍikā</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Vibha 239,\lines{18}</bibl>
+							<note>°\=/<q><w xml:lang="pi">piṇḍā</w></q></note>
+						</cit>
+						<cit type="sim">
+							<bibl>\Patisa I 81,\lines{11}</bibl>
+							<quote>vakkaṃ \dots\ dve °\=/piṇḍikā</quote>
+						</cit>
+						<cit>
+							<bibl>\Vism 589,\lines{13}</bibl>
+							<quote>akkhi\-kūpake nahāru\-suttakena ābaddhaṃ <oRef/>aṃ cakkhū ti</quote>
+						</cit>
+						<cit type="sim">
+							<bibl>\Spk II 354,\lines{24}</bibl>
+							<quote>akkhi\-kūpake akkhi\-paṭalehi pari\-vārito °\=/piṇḍo</quote>
+						</cit>
+						<cit>
+							<bibl>\Mp I 358,\lines{16}</bibl>
+							<quote>eko seno °\=/piṇḍo ayan ti saññāya dārakaṃ vijjhituṃ
+	āgacchati, <note>\textit{\Be, \Se so; \Ee} °\=/<q><w xml:lang="pi">piṇḍako</w></q></note></quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsapuñja</orth>
+						<orth type="print">puñja</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<sense>
+						<def>a heap of flesh</def>
+						<cit>
+							<bibl>\D I 52,\lines{28}</bibl>
+							<xr> \textit{see}
+<ref type="c">maṃsakhala</ref>
+°\=/<ref>khala</ref></xr>
+						</cit>
+						<cit>
+							<bibl>\M I 377,\lines{23}</bibl>
+							<xr> \textit{see}
+<ref type="c">maṃsakhala</ref>
+°\=/<ref>khala</ref></xr>
+						</cit>
+						<cit>
+							<bibl>\Vism 361,\lines{12} \textit{\foll}</bibl>
+							<quote>yathā haliddi\-pilotika\-paṭi\-cchanne <oRef/>e na
+<oRef/>o jānāti maṃ nissāya haliddi\-pilotikā ṭhitā ti,
+	<note>\textit{\Be, \Se so; \Ee} <q><w xml:lang="pi">\=/paṭi\-cchanne na <oRef/>ā</w></q></note></quote>
+							<!-- <w> s.o, -->
+						</cit>
+						<cit type="id">
+							<bibl>\Vibha 67,\lines{2} \textit{\foll}</bibl>
+						</cit>
+						<cit type="sim">
+							<bibl>\PjI 64,\lines{26} \textit{\foll}</bibl>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsapesi</orth>
+°\=/<orth type="print">pesi</orth>
+					</form>
+					<gramGrp>
+						<gen>\f</gen>
+					</gramGrp>
+					<sense>
+						<def>a piece of meat, a.\ p.\ o.\ flesh</def>
+						<cit>
+							<bibl>\Vin III 63,\lines{9} \textit{\foll}</bibl>
+							<quote>kulalena ukkhittaṃ <oRef/>iṃ sāmikānaṃ dassāmī ti</quote>
+						</cit>
+						<cit>
+							<bibl>\Vin III 105,\lines{36}</bibl>
+							<quote>addasaṃ <oRef/>iṃ vehāsaṃ gacchantiṃ, <note>\textit{\cf
+\sv} <ref type="c">maṃsapiṇḍa</ref> °\=/<ref>piṇḍa</ref></note></quote>
+						</cit>
+						<cit>
+							<bibl>\Th 312</bibl>
+							<quote>kāmaṃ bhijjatu 'yaṃ kāyo <oRef/>ī visīyaruṃ</quote>
+						</cit>
+						<!-- <cit> -->
+						<!-- <bibl>\Ja III 100,\lines{16}</bibl> -->
+						<!-- <quote>ekasmiṃ sūnā\-paṇe seno <oRef/>iṃ gahetvā ākāsaṃ -->
+						<!-- pakkhandi</quote> -->
+						<!--    </cit> -->
+						<cit>
+							<bibl>\Ja V 21,\lines{11}</bibl>
+							<quote>alla-<oRef/>-vaṇṇaṃ kumārakaṃ gahetvā, <note>\textit{\cf}
+<bibl>\Sp 533,\lines{12}</bibl>: <quote>jāta\-mattā
+alla-<oRef/>-vaṇṇā</quote></note></quote>
+						</cit>
+						<cit>
+							<bibl>\Ja VI 452,\lines{19*}</bibl>
+							<quote>sigālā ratti\-bhāgena phullaṃ disvāna kiṃsukaṃ <oRef/>ī ti
+maññantā</quote>
+						</cit>
+						<cit>
+							<bibl>\Cp 3:9:1</bibl>
+							<quote>vaṭṭa\-potako ajāta\-pakkho taruṇo <oRef/>\ kulāvake</quote>
+						</cit>
+						<cit>
+							<bibl>\Vism 195,\lines{4}</bibl>
+							<quote>sarīraṃ nāma atireka\-tisata-aṭṭhika\-samussayaṃ \dots\
+nava-<oRef/>-satānu\-littaṃ</quote>
+						</cit>
+						<cit type="sim">
+							<bibl>\Vibha 58,\lines{26}</bibl>
+							<quote>aṭṭhi\-saṅghāṭo \dots\ nava-<oRef/>-sata\-ppa\-bhedena
+maṃsena litto</quote>
+						</cit>
+						<!--    <cit> -->
+						<!-- <bibl>\Ps III 302,\lines{4}</bibl> -->
+						<!-- <quote>tīṇi aṭṭhi\-satāni navahi nahāru\-satehi bandhitvā navahi -->
+						<!-- <oRef/>\=/satehi limpitvā</quote> -->
+						<!--    </cit> -->
+						<cit>
+							<bibl>\Vism 468,\lines{28}</bibl>
+							<quote>lobho \dots\ abhi\-saṅga\-raso tatta\-kapāle khittaṃ <oRef/>\
+viya</quote>
+						</cit>
+						<cit>
+							<bibl>\Sp 1020,\lines{27}</bibl>
+							<quote>seno viya <oRef/>iṃ gahetvā</quote>
+						</cit>
+						<cit>
+							<bibl>\Ps II 19,\lines{12}</bibl>
+							<quote>sā \dots\ alattaka\-paṭala\-bandhu\-jīvaka\-puppha\-sadisaṃ
+<oRef/>iṃ vijāyi</quote>
+						</cit>
+					</sense>
+					<sense>
+						<def>used as a simile</def>
+						<sense n="i">
+							<def>for sensual pleasures</def>
+							<cit>
+								<bibl>\Vin IV 134,\lines{21}</bibl>
+								<quote><oRef/>'\=/ūpamā kāmā, <note><bibl>\Sp 870,\lines{7}</bibl>:
+<quote>bahu\-sādhāraṇa\-ṭṭhena</quote>; \textit{\cf}
+<bibl>\Mil 280,\lines{12}</bibl>: <quote>yathā \dots\
+pakkā <oRef/>\ bahu\-sādhāraṇā</quote>;
+\textit{the simile is explained}
+<bibl>\M I 364,\lines{28} \textit{\foll}</bibl>
+										<bibl type="sim">\Ja III 100,\lines{14} \textit{\foll}</bibl>
+										<bibl type="sim">\Ja III 378,\lines{16} \textit{\foll}</bibl>
+									</note></quote>
+							</cit>
+							<cit>
+								<bibl>\M I 145,\lines{3}</bibl>
+								<quote><oRef/>ī ti \dots\ nandi\-rāgass' etaṃ adhi\-vacanaṃ</quote>
+							</cit>
+						</sense>
+						<sense n="ii">
+							<def>for life, lifetime</def>
+							<cit>
+								<bibl>\A IV 138,\lines{1}</bibl>
+								<quote>seyyathā \dots\ divasa\-santatte ayo\-kaṭāhe <oRef/>ī pakkhittā khippaṃ yeva
+paṭi\-vi\-gacchati na cira\-ṭṭhitikā hoti, evam eva \dots\
+<oRef/>'\=/ūpamaṃ manussānaṃ jīvitaṃ</quote>
+							</cit>
+						</sense>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsabhakkha</orth>
+°\=/<orth type="print">bhakkha</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen> and
+<gen>\m</gen>
+					</gramGrp>
+					<sense>
+						<def>eating meat, feeding on meat; a meat eater (said mainly of
+carnivores, yakkhas, and the like)</def>
+						<cit>
+							<bibl>\Ja I 274,\lines{31}</bibl>
+							<quote>para\-ruhira-<oRef/>o yakkho</quote>
+						</cit>
+						<cit>
+							<bibl>\Ja III 398,\lines{25*}</bibl>
+							<quote><oRef/>o tuvaṃ rāja [\textit{\scil} Garuḷa]
+phala\-bhakkho ayaṃ dijo</quote>
+						</cit>
+						<cit>
+							<bibl>\Spk II 283,\lines{17}</bibl>
+							<quote>paṇḍu\-sīho paṇḍu\-palāsa\-vaṇṇa\-gāvī\-sadiso
+<oRef/>o</quote>
+						</cit>
+						<cit>
+							<bibl>\PNTB 30.372</bibl>
+							<quote><oRef/>e kuto dayā</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsabhāga</orth>
+°\=/<orth type="print">bhāga</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<sense>
+						<def>a portion of meat, a share o.\ m.</def>
+						<cit>
+							<bibl>\Ps 349,\lines{17--18}</bibl>
+							<quote>maccha\-bhāgo <oRef/>o \dots\ catusaṭṭhi\-kahāpaṇo vā
+daṇḍo ti</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Spk III 245,\lines{32--33}</bibl>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsabhojana</orth>
+°\=/<orth type="print">bhojana</orth>
+					</form>
+					<gramGrp>
+						<gen>\n</gen> and
+<gen>\mfn</gen>
+					</gramGrp>
+					<sense n="1">
+						<gramGrp>
+							<gen>\n</gen>
+						</gramGrp>
+						<sense n="i">
+							<def>the eating of meat</def>
+							<cit>
+								<bibl>\Sn 242 \textit{\foll}</bibl>
+								<quote>esāma\-gandho na hi <oRef/>aṃ</quote>
+							</cit>
+						</sense>
+						<sense n="ii">
+							<def>a meat dish</def>
+							<cit>
+								<bibl>\Ja II 193,\lines{29'}</bibl>
+								<quote>a\=/<oRef/>aṃ upa\-nāmetuṃ na sakkomi</quote>
+							</cit>
+						</sense>
+					</sense>
+					<sense n="2">
+						<gramGrp>
+							<gen>\mfn</gen>
+						</gramGrp>
+						<def>feeding on meat</def>
+						<cit>
+							<bibl>\Ja V 425,\lines{7*}</bibl>
+							<quote>sīho yathā lohita\=/<oRef/>o \dots\ tath' itthiyo</quote>
+						</cit>
+						<cit>
+							<bibl>\Bva 265\lines{16}</bibl>
+							<quote>yakkho \dots\ apari\-mita\=/<oRef/>o ahosi</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsamaccha</orth>
+°\=/<orth type="print">maccha</orth>
+					</form>
+					<note>\textit{only in:} </note>
+					<re>
+						<form>
+							<orth type="c">āmakamaṃsamaccha</orth>
+							<orth type="print">āmaka\=/<oRef/></orth>
+						</form>
+						<gramGrp>
+							<gen>\m</gen>
+							<number>\pl</number>
+						</gramGrp>
+						<sense>
+							<def>raw meat and fish</def>
+							<cit>
+								<bibl>\Sv 78,\lines{14}</bibl>
+								<quote>āmaka-<oRef/>ānaṃ paṭi\-ggahaṇam</quote>
+							</cit>
+						</sense>
+					</re>
+					<note>
+						<ref type="c">maṃsamaccha</ref>
+						<ref>maṃsamacchaṃ</ref>
+\textit{in \Ee at} <bibl>\Ja IV 135,\lines{21'}</bibl>
+\textit{is \prob \wr for} <ref>macchamaṃsa</ref>, \textit{\qv;}
+</note>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsarasa</orth>
+°\=/<orth type="print">rasa</orth>
+					</form>
+					<gramGrp>
+						<gen>\m</gen>
+					</gramGrp>
+					<sense>
+						<def>meat broth (see also <ref>rasa</ref>)</def>
+						<cit>
+							<bibl>\Sp 827,\lines{13--14}</bibl>
+							<quote>eko sa\-maṃsakaṃ rasaṃ abhi\-haritvā \dots\ maccha\-rasaṃ
+<oRef/>an ti <note>[\textit{meat broth with pieces of meat}]</note>
+vutte \dots\ maṃsaṃ visuṃ katvā <oRef/>aṃ <note>[\textit{meat broth
+without pieces of meat}]</note> gaṇhathā 'ti vadati;
+<note>\textit{\cf Kieffer-Pülz, 2013, \p 1403 \foll}</note></quote>
+						</cit>
+						<cit>
+							<bibl>\Sp 1092,\lines{24}</bibl>
+							<quote>paṭi\-cchāda\-nīyenā ti <oRef/>ena</quote>
+						</cit>
+						<cit>
+							<bibl>\PjII 259,\lines{4}</bibl>
+							<quote>tam enaṃ \dots\ gharaṃ netvā <oRef/>ena parivisi</quote>
+						</cit>
+						<cit>
+							<bibl>\Bhes 12:19</bibl>
+							<quote>gaṇḍūsa\-dhāraṇe niccaṃ telaṃ <oRef/>o 'tha vā</quote>
+						</cit>
+						<cit type="borrowed">
+							<bibl>\AstaHrSam Sū.22:6</bibl>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub2">
+					<form>
+						<orth type="c">maṃsarasabhojana</orth>
+						<oRef/>\=/<orth type="print">bhojana</orth>
+					</form>
+					<gramGrp>
+						<gen>\n</gen>
+					</gramGrp>
+					<sense>
+						<def>the consumption of meat broth (Horner, 1978, \p xxxix: <q><w xml:lang="en">meal consisting of a flesh product</w></q>)</def>
+						<cit>
+							<bibl>\Bva 298,\lines{40}</bibl>
+							<quote>pari\-nibbāna\-divase <oRef/>\=/bhojanaṃ \dots\ imā samatiṃsa
+sabba\-buddhānaṃ dhammatā ti</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsalohita</orth>
+						<orth type="print">lohita</orth>
+					</form>
+					<gramGrp>
+						<pos/>
+						<!-- Kam im csalt Zusammenhang so bisher nicht eindeutig bestimmbar vor. Gegen den Einsatz hier spricht aber nichts. -->
+						<gen/>
+					</gramGrp>
+					<sense>
+						<def/>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub2">
+					<form>
+						<orth type="c">maṃsalohitakhādaka</orth>
+°\=/<orth type="print">khādaka</orth>
+						<!-- ref. s.v. -->
+					</form>
+					<gramGrp>
+						<gen/>
+					</gramGrp>
+					<sense>
+						<def/>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="c">maṃsasoṇita</orth>
+°\=/<orth type="print">soṇita</orth>
+					</form>
+					<gramGrp>
+						<gen/>
+					</gramGrp>
+					<etym/>
+					<sense>
+						<def/>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub2">
+					<form>
+						<orth type="c">maṃsasoṇitupalitta</orth>
+°’\=/<orth type="print">upalitta</orth>
+						<!--  ref. s.v. upalimpati -->
+					</form>
+					<gramGrp>
+						<gen/>
+					</gramGrp>
+					<sense>
+						<def/>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+						<cit>
+							<bibl/>
+							<quote/>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<form>
+						<orth type="print">nimmaṃsa</orth>
+						<!-- ref. s.v. nimmaṃsa -->
+						<!-- <orth  type='var'>nimaṃsa</orth> -->
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>fleshless</def>
+						<cit>
+							<bibl>\M I 364,\lines{15} \textit{\foll}</bibl>
+							<quote>aṭṭhi\-kaṅkalaṃ suni\-kantaṃ nikantaṃ <oRef/>aṃ
+	lohita\-makkhitaṃ, <note>\textit{\Ee \vl <q><w xml:lang="pi"><oRef/>a</w><!-- <w> s.o, --></q>\=/\ in the first place; quoted}
+<bibl>\NiddaI 31,\lines{14} \textit{\foll}</bibl>: \textit{\Be
+so in all places; \Ee} <oRef/>a\=/\ \textit{in all places;}
+<bibl>\Ps III 43,\lines{4--5}</bibl>: <quote>ten' ev' āha
+<oRef/>an ti. lohitaṃ pana makkhetvā tiṭṭhati tena vuttaṃ
+lohita\-makkhitan ti</quote>; \textit{\cf below} <ref type="c">nimmaṃsa\-lohita\-makkhita</ref>
+									<ref><oRef/>\=/lohita\-makkhita</ref>
+								</note></quote>
+						</cit>
+						<cit>
+							<bibl>\Ps III 42,\lines{26}</bibl>
+							<quote>aṭṭhi\-kaṅkalan ti \dots\ <oRef/>attā kaṅkalan ti
+vuccati</quote>
+						</cit>
+						<cit type="sim">
+							<bibl>\Vmv II 48,\lines{16}</bibl>
+							<quote>aṭṭhi\-kaṅkalūpamā ti \dots\ <oRef/>atāya kaṅkalan ti ca
+vuccati</quote>
+						</cit>
+						<cit>
+							<bibl>\PjII 207,\lines{17}</bibl>
+							<quote>buddhānaṃ hi eṇimigass' eva anu\-pubbavaṭṭā jaṃghā
+honti na purato <oRef/>ā pacchato suṃsumāra\-kucchi viya
+uddhumātā</quote>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub2">
+					<form>
+						<orth type="c">nimmaṃsa\-lohita\-makkhita</orth>
+						<oRef/>\=/<orth type="print">lohita\-makkhita</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>fleshless and smeared with blood</def>
+						<cit>
+							<bibl>D II 296,\lines{13}</bibl>
+							<quote>aṭṭhika\-saṃ\-khalikaṃ <oRef/>lohita\-makkhitaṃ
+	nahāru\-sam\-bandhaṃ, <note>\textit{\Se so; \Be} <q><w xml:lang="pi">nimaṃsa</w></q>\=/; \textit{\Ce, \Ee against \mss} <q><w xml:lang="pi">nimmaṃsaṃ</w></q>; <bibl>\Sv
+772,\lines{11--12}</bibl>: <quote><oRef/>lohita\-makkhitan ti
+maṃse khīṇe pi lohitaṃ na sussati</quote>, \textit{\Ce, \Ee, \Se so; 
+		\Be} <q><w xml:lang="pi">nimaṃsa</w></q>\=/</note></quote>
+						</cit>
+						<cit type="id">
+							<bibl>\M I 58,\lines{26}, \M I 89,\lines{6}; \A III
+324,\lines{12}</bibl>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub2">
+					<form>
+						<orth type="c">nimmaṃsa\-kata</orth>
+						<oRef/>\=/<orth type="print">kata</orth>
+						<orth type="c">nimmaṃsī\-kata</orth>
+						<oRef/><orth type="var">ī-kata</orth>
+					</form>
+					<gramGrp>
+						<gen>\mfn</gen>
+					</gramGrp>
+					<sense>
+						<def>made fleshless; defleshed</def>
+						<cit>
+							<bibl>\Sp 508,\lines{24}</bibl>
+							<quote>tassa [\textit{\scil} kammassa] kira narakā cavanakāle
+nimmaṃsa\-katānaṃ gunnaṃ aṭṭhirāsi yeva nimittaṃ ahosi</quote>
+						</cit>
+						<cit type="id">
+							<bibl>\Spk II 218,\lines{23--24}</bibl>
+							<note>\textit{\Ee} <q><w xml:lang="pi">nimmaṃsī katānaṃ</w></q>;
+\textit{\Be, \Se} <q><w xml:lang="pi">nimmaṃsa\-katānaṃ</w></q>;
+\textit{\Be, \Se \vll}
+<q><w xml:lang="pi">nimmaṃsī\-katānaṃ</w></q>, <q><w xml:lang="pi">nimmaṃ\-sakānaṃ</w></q></note>
+						</cit>
+					</sense>
+				</entry>
+				<entry type="sub">
+					<xr>\textit{see also}
+<ref>amaṃsaka</ref>,
+<!-- <ref>ekamaṃsakhala</ref>  ref. moved to maṃsakhala -->
+						<ref>tacamaṃsāvalepana</ref>, 
+<ref>paramaṃsakhādi(n)</ref>, <!-- ref. sv para -->
+						<ref>piṭṭhimaṃsika</ref>, <!-- ref. sv piṭṭhi -->
+						<ref>balisamaṃsika</ref>, <!-- ref. sv balisa -->
+						<ref>samaṃsaka</ref>,
+<ref>surāmaṃsapabodhana</ref>
+						<!-- ref. sv pabodhana -->
+					</xr>
+				</entry>
+			</div>
+		</body>
+	</text>
+</TEI>
