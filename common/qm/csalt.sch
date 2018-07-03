@@ -15,11 +15,4 @@
 			<report test="parent::tei:re" role="ERROR">re soll nicht in re stehen</report>
 		</rule>
 	</pattern>
-	<!-- Besonderheiten CPD -->
-	<pattern id="ungueltige-zeichen">
-		<rule context="tei:*">
-			<report test="text()[contains(.,'@')]" role="ERROR">@ soll nicht mehr enthalten sein  (Hilfszeichen suchen und ersetzen in CPD)</report>
-			<report test="text()[contains(.,'a-â')]" role="ERROR">a-â im headword von Untereinträgen soll verschmolzen werden zu â</report>
-		</rule>
-	</pattern>
 </schema>
